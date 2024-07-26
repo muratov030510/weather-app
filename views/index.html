@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> 
+</head>
+<body>
+    <header>
+        <h1>Weather App</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Weather</a>
+        <a href="#">Map</a>
+        <a href="#">News</a>
+        <a href="#">About</a>
+    </nav>
+    <div id="content-wrapper">
+        <main>
+            <form id="weatherForm">
+                <label for="city">Enter City:</label>
+                <input type="text" id="city" name="city" required>
+                <button type="submit">Get Weather</button>
+            </form>
+            <section id="weather-section">
+                <h2>Current Weather</h2>
+                <div id="weather-info">
+                </div>
+            </section>
+            <section id="map-section" class="hidden">
+                <h2>City Map</h2>
+                <div id="map">
+                    <img id="staticMap" src="" alt="City Map">
+                </div>
+            </section>
+            <section id="background-section" class="hidden">
+            </section>
+            <section id="news-section" class="hidden">
+                <h2>Top News Headlines <cite><a href="https://newsapi.org/sources">(in API does not have KZ)</a></cite></h2>
+                <ul id="news-list">
+                </ul>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Muratov Bakhromkhon</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/scripts/main.js"></script>
+</body>
+</html>
