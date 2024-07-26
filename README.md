@@ -38,11 +38,11 @@ A simple web application that provides current weather information, a city map, 
 
 To get started with the project, clone the repository and install the dependencies:
 
-> git clone https://github.com/muratov030510/weather-app.git
-> cd weather-app
-> npm install
-> node server.js
-> The app will be accessible at http://localhost:3000 in your web browser.
+- git clone https://github.com/muratov030510/weather-app.git
+- cd weather-app
+- npm install
+- node server.js
+- The app will be accessible at http://localhost:3000 in your web browser.
 
 ## Usage
 
